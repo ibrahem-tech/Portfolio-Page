@@ -169,9 +169,8 @@ nav { display: none; }
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(images/services.jpg);
+    background-image: url(images/my-services.jpeg);
     background-size: cover;
-
     color: var(--clr-light);
     text-align: center;
 }
@@ -211,5 +210,6 @@ nav { display: none; }
         margin-left: 2em;
     }
 }
+
 
 
