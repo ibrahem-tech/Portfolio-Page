@@ -134,7 +134,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .nav {
@@ -285,7 +285,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(images/my-services.jpeg);
+    background-image: url(images/my-services.jpg);
     background-size: cover;
     
     color: var(--clr-light);
