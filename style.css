@@ -34,10 +34,6 @@
     }
 }
 
-html {
-
-    scroll-behavior: smooth;
-}
 
 body {
     background: var(--clr-light);
@@ -64,6 +60,7 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+/* Buttons */
 
 .btn {
     display: inline-block;
@@ -83,7 +80,7 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
-
+/* Typography */
 
 h1,
 h2,
@@ -128,7 +125,6 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 2em;
 }
 
-
 /* header */
 
 header {
@@ -138,7 +134,7 @@ header {
 }
 
 .logo {
-    max-width: 300px;
+    max-width: 100px;
 }
 
 .nav {
@@ -190,7 +186,6 @@ header {
 
 .nav-open .nav {
     transform: translateX(0);
-    
 }
 
 .nav-open .nav-toggle {
@@ -208,6 +203,9 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
+
+
+
 
 
 
@@ -237,10 +235,6 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
-
-
-
 
 
 /*  Intro section  */
@@ -287,12 +281,14 @@ header {
     }
 }
 
+
+
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(images/my-services.jpg);
+    background-image: url(images/my-services.jpeg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
-    color: wheat;
+    
+    color: var(--clr-light);
     text-align: center;
 }
 
@@ -332,6 +328,8 @@ header {
         margin-left: 2em;
     }
 }
+
+
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -373,29 +371,6 @@ header {
     }
 }
 
-
-.my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;    
-}
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.portfolio__item {
-    background: var(--clr-accent);
-}
-
-.portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-    ;
-}
-
 /* My Work */
 
 .my-work {
@@ -406,7 +381,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
@@ -428,7 +403,7 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .75;
+    opacity: .5;
 }
 
 
@@ -476,6 +451,9 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+
+/* Individual portfolio item styles */
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
